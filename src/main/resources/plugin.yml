@@ -1,0 +1,4 @@
+name: AlmostFlatLands
+version: 0.1
+main: uk.co.jacekk.bukkit.almostflatlands.AlmostFlatLands
+load: startup
