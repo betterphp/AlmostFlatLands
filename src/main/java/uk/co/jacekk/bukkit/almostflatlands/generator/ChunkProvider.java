@@ -52,7 +52,7 @@ public class ChunkProvider extends ChunkGenerator {
 					this.setBlockAt(chunk, x, y, z, Material.DIRT);
 				}
 				
-				this.setBlockAt(chunk, x, height, z, Material.DIRT);
+				this.setBlockAt(chunk, x, height, z, Material.GRASS);
 				
 				biomes.setBiome(x, z, Biome.PLAINS);
 			}
