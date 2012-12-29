@@ -6,6 +6,7 @@ import java.util.Random;
 
 import org.bukkit.Material;
 import org.bukkit.World;
+import org.bukkit.block.Biome;
 import org.bukkit.generator.BlockPopulator;
 import org.bukkit.generator.ChunkGenerator;
 import org.bukkit.util.noise.SimplexOctaveGenerator;
@@ -52,6 +53,8 @@ public class ChunkProvider extends ChunkGenerator {
 				}
 				
 				this.setBlockAt(chunk, x, height, z, Material.DIRT);
+				
+				biomes.setBiome(x, z, Biome.PLAINS);
 			}
 		}
 	    
