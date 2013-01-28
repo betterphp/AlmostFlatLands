@@ -27,7 +27,7 @@ public class AlmostFlatLands extends BasePlugin {
 	
 	@Override
 	public ChunkGenerator getDefaultWorldGenerator(String worldName, String id){
-		return new ChunkProvider();
+		return new ChunkProvider(this);
 	}
 	
 }

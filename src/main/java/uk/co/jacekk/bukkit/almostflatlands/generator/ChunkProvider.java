@@ -11,14 +11,23 @@ import org.bukkit.generator.BlockPopulator;
 import org.bukkit.generator.ChunkGenerator;
 import org.bukkit.util.noise.SimplexOctaveGenerator;
 
+import uk.co.jacekk.bukkit.almostflatlands.AlmostFlatLands;
+import uk.co.jacekk.bukkit.almostflatlands.Config;
+
 public class ChunkProvider extends ChunkGenerator {
+	
+	private AlmostFlatLands plugin;
+	
+	public ChunkProvider(AlmostFlatLands plugin){
+		this.plugin = plugin;
+	}
 	
 	@Override
 	public List<BlockPopulator> getDefaultPopulators(World world){
 		ArrayList<BlockPopulator> populators = new ArrayList<BlockPopulator>();
 		
-		populators.add(new FlowerPopulator());
-		populators.add(new TreePopulator());
+		populators.add(new FlowerPopulator(plugin));
+		populators.add(new TreePopulator(plugin));
 		
 		return populators;
 	}
@@ -46,7 +55,7 @@ public class ChunkProvider extends ChunkGenerator {
 			for (int z = 0; z < 16; ++z){
 				this.setBlockAt(chunk, x, 0, z, Material.BEDROCK);
 				
-				int height = (int) ((gen.noise(x + chunkX * 16, z + chunkZ * 16, 0.5, 0.5) / 0.75) + 32);
+				int height = (int) ((gen.noise(x + chunkX * 16, z + chunkZ * 16, 0.5, 0.5) / 0.75) + plugin.config.getInt(Config.WORLD_HEIGHT));
 				
 				for (int y = 1; y < height; ++y){
 					this.setBlockAt(chunk, x, y, z, Material.DIRT);
