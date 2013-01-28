@@ -5,7 +5,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.entity.CreatureSpawnEvent;
 
 import uk.co.jacekk.bukkit.almostflatlands.generator.ChunkProvider;
-import uk.co.jacekk.bukkit.baseplugin.v7.event.BaseListener;
+import uk.co.jacekk.bukkit.baseplugin.v8.event.BaseListener;
 
 public class SpawningListener extends BaseListener<AlmostFlatLands> {
 	
