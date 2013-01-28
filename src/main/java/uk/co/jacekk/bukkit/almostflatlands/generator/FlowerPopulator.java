@@ -35,11 +35,11 @@ public class FlowerPopulator extends BlockPopulator {
 					block = block.getRelative(BlockFace.UP);
 				}
 				
-				if (random.nextInt(100) < plugin.config.getInt(Config.WORLD_FLOWER_CHANCE)){
-					block.setType((random.nextInt(100) < 65) ? Material.YELLOW_FLOWER : Material.RED_ROSE);
-				}else if (random.nextInt(100) < plugin.config.getInt(Config.WORLD_GRASS_CHANCE)){
+				if (random.nextInt(100) < plugin.config.getInt(Config.WORLD_GRASS_CHANCE)){
 					block.setType(Material.LONG_GRASS);
 					block.setData((byte) 0x1);
+				}else if (random.nextInt(100) < plugin.config.getInt(Config.WORLD_FLOWER_CHANCE)){
+					block.setType((random.nextInt(100) < 65) ? Material.YELLOW_FLOWER : Material.RED_ROSE);
 				}
 			}
 		}
