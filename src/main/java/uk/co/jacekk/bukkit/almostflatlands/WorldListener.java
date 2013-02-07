@@ -11,8 +11,8 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.world.WorldInitEvent;
 
 import uk.co.jacekk.bukkit.almostflatlands.generator.ChunkProvider;
-import uk.co.jacekk.bukkit.baseplugin.v8.event.BaseListener;
-import uk.co.jacekk.bukkit.baseplugin.v8.util.ReflectionUtils;
+import uk.co.jacekk.bukkit.baseplugin.v9.event.BaseListener;
+import uk.co.jacekk.bukkit.baseplugin.v9.util.ReflectionUtils;
 
 public class WorldListener extends BaseListener<AlmostFlatLands> {
 	
