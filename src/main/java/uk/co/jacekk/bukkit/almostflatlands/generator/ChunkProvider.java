@@ -57,7 +57,11 @@ public class ChunkProvider extends ChunkGenerator {
 				
 				int height = (int) ((gen.noise(x + chunkX * 16, z + chunkZ * 16, 0.5, 0.5) / 0.75) + plugin.config.getInt(Config.WORLD_HEIGHT));
 				
-				for (int y = 1; y < height; ++y){
+				for (int y = 1; y < height - 4; ++y){
+					this.setBlockAt(chunk, x, y, z, Material.STONE);
+				}
+				
+				for (int y = height - 4; y < height; ++y){
 					this.setBlockAt(chunk, x, y, z, Material.DIRT);
 				}
 				
