@@ -18,5 +18,6 @@ public class Config {
 	public static final PluginConfigKey WORLD_FLOWER_CHANCE	= new PluginConfigKey("world-flower-chance", 1);
 	public static final PluginConfigKey WORLD_TREE_CHANCE	= new PluginConfigKey("world-tree-chance", 15);
 	public static final PluginConfigKey WORLD_TREE_TYPES	= new PluginConfigKey("world-tree-types", Arrays.asList(TreeType.TREE.name(), TreeType.BIRCH.name(), TreeType.BIG_TREE.name()));
+	public static final PluginConfigKey WORLD_CREATE_ORE	= new PluginConfigKey("world-create-re", true);
 	
 }

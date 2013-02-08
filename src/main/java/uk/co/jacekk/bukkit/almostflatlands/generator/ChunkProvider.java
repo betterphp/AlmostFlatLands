@@ -29,6 +29,10 @@ public class ChunkProvider extends ChunkGenerator {
 		populators.add(new FlowerPopulator(plugin));
 		populators.add(new TreePopulator(plugin));
 		
+		if (plugin.config.getBoolean(Config.WORLD_CREATE_ORE)){
+			populators.add(new OrePopulator(plugin, world));
+		}
+		
 		return populators;
 	}
 	
