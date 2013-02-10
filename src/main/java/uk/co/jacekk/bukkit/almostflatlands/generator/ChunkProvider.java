@@ -74,7 +74,7 @@ public class ChunkProvider extends ChunkGenerator {
 				biomes.setBiome(x, z, Biome.valueOf(plugin.config.getString(Config.WORLD_BIOME)));
 			}
 		}
-	    
+		
 	    return chunk;
 	}
 	
