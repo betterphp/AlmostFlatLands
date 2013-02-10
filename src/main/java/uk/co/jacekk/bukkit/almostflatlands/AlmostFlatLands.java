@@ -5,8 +5,8 @@ import java.io.File;
 import org.bukkit.generator.ChunkGenerator;
 
 import uk.co.jacekk.bukkit.almostflatlands.generator.ChunkProvider;
-import uk.co.jacekk.bukkit.baseplugin.v9.BasePlugin;
-import uk.co.jacekk.bukkit.baseplugin.v9.config.PluginConfig;
+import uk.co.jacekk.bukkit.baseplugin.v9_1.BasePlugin;
+import uk.co.jacekk.bukkit.baseplugin.v9_1.config.PluginConfig;
 
 public class AlmostFlatLands extends BasePlugin {
 	
