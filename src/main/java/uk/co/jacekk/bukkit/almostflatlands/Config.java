@@ -5,7 +5,7 @@ import java.util.Arrays;
 import org.bukkit.TreeType;
 import org.bukkit.block.Biome;
 
-import uk.co.jacekk.bukkit.baseplugin.v9_1.config.PluginConfigKey;
+import uk.co.jacekk.bukkit.baseplugin.config.PluginConfigKey;
 
 public class Config {
 	

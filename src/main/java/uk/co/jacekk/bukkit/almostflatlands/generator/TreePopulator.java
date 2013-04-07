@@ -10,7 +10,7 @@ import org.bukkit.generator.BlockPopulator;
 
 import uk.co.jacekk.bukkit.almostflatlands.AlmostFlatLands;
 import uk.co.jacekk.bukkit.almostflatlands.Config;
-import uk.co.jacekk.bukkit.baseplugin.v9_1.util.ListUtils;
+import uk.co.jacekk.bukkit.baseplugin.util.ListUtils;
 
 public class TreePopulator extends BlockPopulator {
 	
