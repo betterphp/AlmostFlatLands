@@ -51,7 +51,7 @@ public class ChunkProvider extends ChunkGenerator {
 	public byte[][] generateBlockSections(World world, Random random, int chunkX, int chunkZ, BiomeGrid biomes){
 	    byte[][] chunk = new byte[world.getMaxHeight() / 16][];
 	    
-	    SimplexOctaveGenerator gen =  new SimplexOctaveGenerator(new Random(world.getSeed()), 8);
+	    SimplexOctaveGenerator gen = new SimplexOctaveGenerator(new Random(world.getSeed()), 8);
 		
 		gen.setScale(1 / 64.0);
 		

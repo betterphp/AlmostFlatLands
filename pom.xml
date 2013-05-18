@@ -3,7 +3,7 @@
 	<groupId>uk.co.jacekk.bukkit</groupId>
 	<artifactId>almostflatlands</artifactId>
 	<name>AlmostFlatLands</name>
-	<version>0.2.1-SNAPSHOT</version>
+	<version>0.2.1</version>
 	<packaging>jar</packaging>
 	<url>http://dev.bukkit.org/server-mods/almostflatlands/</url>
 	
@@ -13,8 +13,8 @@
 		<upload.dbo.category>server-mods</upload.dbo.category>
 		<upload.dbo.slug>almostflatlands</upload.dbo.slug>
 		
-		<baseplugin.version>10.1</baseplugin.version>
-		<baseplugin.package>10_1</baseplugin.package>
+		<baseplugin.version>11.0</baseplugin.version>
+		<baseplugin.package>11_0</baseplugin.package>
 	</properties>
 	
 	<repositories>
