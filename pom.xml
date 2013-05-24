@@ -13,8 +13,8 @@
 		<upload.dbo.category>server-mods</upload.dbo.category>
 		<upload.dbo.slug>almostflatlands</upload.dbo.slug>
 		
-		<baseplugin.version>11.0</baseplugin.version>
-		<baseplugin.package>11_0</baseplugin.package>
+		<baseplugin.version>11.1</baseplugin.version>
+		<baseplugin.package>11_1</baseplugin.package>
 	</properties>
 	
 	<repositories>
