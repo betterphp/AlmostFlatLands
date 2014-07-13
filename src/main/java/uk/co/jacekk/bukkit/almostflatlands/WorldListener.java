@@ -1,11 +1,11 @@
 package uk.co.jacekk.bukkit.almostflatlands;
 
-import net.minecraft.server.v1_7_R2.WorldData;
-import net.minecraft.server.v1_7_R2.WorldServer;
-import net.minecraft.server.v1_7_R2.WorldType;
+import net.minecraft.server.v1_7_R4.WorldData;
+import net.minecraft.server.v1_7_R4.WorldServer;
+import net.minecraft.server.v1_7_R4.WorldType;
 
 import org.bukkit.World;
-import org.bukkit.craftbukkit.v1_7_R2.CraftWorld;
+import org.bukkit.craftbukkit.v1_7_R4.CraftWorld;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.world.WorldInitEvent;
