@@ -17,11 +17,11 @@ public class AlmostFlatLands extends BasePlugin {
 		this.config = new PluginConfig(new File(this.baseDirPath + File.separator + "config.yml"), Config.class, this.log);
 		
 		if (this.config.getBoolean(Config.SET_WORLD_TYPE)){
-			this.pluginManager.registerEvents(new WorldListener(this), this);
+		    this.getServer().getPluginManager().registerEvents(new WorldListener(this), this);
 		}
 		
 		if (this.config.getBoolean(Config.PREVENT_SPAWNING)){
-			this.pluginManager.registerEvents(new SpawningListener(this), this);
+		    this.getServer().getPluginManager().registerEvents(new SpawningListener(this), this);
 		}
 	}
 	
