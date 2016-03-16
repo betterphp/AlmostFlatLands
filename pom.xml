@@ -9,6 +9,8 @@
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<upload.dbo.category>bukkit-plugins</upload.dbo.category>
+		<upload.dbo.slug>almostflatlands</upload.dbo.slug>
 		
 		<baseplugin.version>14</baseplugin.version>
 		<baseplugin.package>14</baseplugin.package>
@@ -36,8 +38,8 @@
 		
     <!--Spigot -->
     <dependency>
-           <groupId>org.spigotmc</groupId>
-           <artifactId>spigot</artifactId>
+           <groupId>org.bukkit</groupId>
+           <artifactId>craftbukkit</artifactId>
            <version>1.9-R0.1-SNAPSHOT</version>
            <scope>provided</scope>
     </dependency>
